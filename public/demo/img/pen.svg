@@ -1,0 +1,12 @@
+<svg id="Компонент_1_1" data-name="Компонент 1 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Color_Overlay" data-name="Color Overlay" d="M1781,275h12v12h-12Z" fill="#9095a8"/>
+    </clipPath>
+  </defs>
+  <g id="Группа_масок_1" data-name="Группа масок 1" transform="translate(-1781 -275)" clip-path="url(#clip-path)">
+    <g id="_001-draw" data-name="001-draw" transform="translate(1781 275)">
+      <path id="Контур_3" data-name="Контур 3" d="M7.462,2.022,9.9,4.463,3.724,10.642,1.284,8.2Zm4.293-.589L10.667.345a1.08,1.08,0,0,0-1.526,0L8.1,1.388l2.441,2.441,1.216-1.216A.832.832,0,0,0,11.755,1.433ZM.007,11.632a.278.278,0,0,0,.336.33l2.72-.66L.623,8.862Z" fill="#9095a8"/>
+    </g>
+  </g>
+</svg>

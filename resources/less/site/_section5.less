@@ -1,0 +1,90 @@
+.section-5{
+	.tablesContainer{
+		flex-direction: column;
+
+		&-1, &-2{
+			display: flex;
+			.lg-block({
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				max-width: 912px;
+			});
+		}
+	}
+
+	.table5{
+		&-1{
+			width: 452px;
+			.lg-block({
+				width: 100%;
+				max-width: 912px;
+			});
+		}
+		&-2{
+			width: 912px;
+		}
+		&-3, &-4, &-5{
+			width: 452px;
+			.lg-block({
+				width: 100%;
+				max-width: 912px;
+			});
+		}
+		&-1, &-2, &-3, &-4, &-5{
+			margin: 15px 5px;
+			td, th{
+				padding: 0 10px;
+			}
+		}
+
+	}
+
+	.table5-2 tr th:first-child{
+		width: 190px;
+	}
+
+	.table5-2 .gr{
+		color: #199069;
+	}
+
+	.table5-4{
+		.color-1{
+			color: #20f2ad;
+		}
+	}
+	.table5-5{
+		
+		.color-1{
+			color: #f4f22a;
+		}
+	}
+}
+
+.section5-charts{
+	margin: 15px auto;
+	width: 1400px;
+	display: flex;
+
+	justify-content: center;
+
+	.lg-block({
+		width: 900px;
+	});
+	
+	.chartWrapper{
+		height: 300px;
+		width: 900px;
+
+
+	}
+	
+	.chartMonthsWrapper{
+		width: 1400px;
+		height: 300px;
+	}
+}
+
+.toPDF{
+	background-color: #2b2c3b;
+}

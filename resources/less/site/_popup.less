@@ -1,0 +1,93 @@
+.overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+
+	&:after{
+		content:'';
+		background: url("../img/bg.png") no-repeat center;
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		opacity:0.91;
+		z-index: 1500;
+	}
+
+	&__wrapper{
+		width: 100%;
+		height: 100%;
+		.flex-center();
+	}
+}
+
+.popup{
+	width: 655px;
+	position: relative;
+	border-radius: 8px;
+	background: url("../img/bg.png") no-repeat center;	box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.19);
+	z-index: 2000;
+	
+	.font-gilroy();
+
+	&__close{
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		width: 10px;
+		height: 10px;
+		background: url("../img/cancel.png") no-repeat center;
+		cursor: pointer;
+	}
+	&__header{
+		font-size: 22px;
+		padding: 50px 0;
+		text-align: center;
+	}
+	&__scenaries{
+		display: flex;
+		margin-bottom: 70px;
+		justify-content: space-around;
+	}
+	&__scenario{
+		width: 150px;
+		height: 165px;
+		border-radius: 10px;
+		background-color: #262836;
+		cursor: pointer;
+	}
+	&__scenarioInner{
+		background-color: #2d2f3f;
+		height: 160px;
+		border-radius: 10px;
+		text-align: center;
+		line-height: 1.2;
+		display: flex;
+		flex-direction: column;
+	}
+	&__scenarioName{
+		font-size: 16px;
+		padding: 45px 0 10px 0;
+	}
+	&__scenarioDesc{
+		font-size: 12px;
+		color: rgba(255, 255, 255, 0.4);
+	}
+	&__scenarioBtn{
+		font-size: 14px;
+		font-weight: bold;
+		color: rgba(255, 255, 255, 0.102);
+		letter-spacing: 1px;
+		margin: auto 0 15px 0;
+	}
+	&__scenarioArrow{
+		font-size: 20px;
+		position: relative;
+		top: 3px;
+	}
+}

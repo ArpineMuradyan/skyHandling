@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <title>SkyHandling</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="index.html" class="logoWrapper">
+          <div class="logo">SkyHandling</div>
+          <div class="subtitle">
+            DOC Calculator (Direct Operating Costs Analysis)
+          </div>
+        </a>
+        <div class="name">Gulfstream G150</div>
+        <div class="navbar">
+          <a href="calculator.html" class="button">Calculator</a>
+          <a href="pdf-review.html" class="button">Create report</a>
+        </div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="container">
+        <div class="item">
+          <div class="name">Year of manufacture:</div>
+          <div class="value">2019</div>
+        </div>
+        <div class="item">
+          <div class="name">Can be operated up to:</div>
+          <div class="value">2024</div>
+        </div>
+        <div class="item">
+          <div class="name">Possible service life:</div>
+          <div class="value">3</div>
+        </div>
+        <div class="item">
+          <div class="name">MTOW (kg):</div>
+          <div class="value">3 133,00</div>
+        </div>
+        <div class="item">
+          <div class="name">Max. cruising speed (km/h):</div>
+          <div class="value">340,00</div>
+        </div>
+        <div class="item">
+          <div class="name">Fuel consumption on a cruise (l/hour):</div>
+          <div class="value">222,56</div>
+        </div>
+        <div class="item">
+          <div class="name">Max. service life:</div>
+          <div class="value">5</div>
+        </div>
+        <div class="item">
+          <div class="name">Today's year:</div>
+          <div class="value">2021</div>
+        </div>
+        <div class="item">
+          <div class="name">Cost of the aircraft:</div>
+          <div class="value">2 150 000 $</div>
+        </div>
+        <div class="item">
+          <div class="name">Max. fuel quantity (l):</div>
+          <div class="value">1 210,00</div>
+        </div>
+        <div class="item">
+          <div class="name">Flight range with full load (km):</div>
+          <div class="value">1 850,00</div>
+        </div>
+        <div class="item">
+          <div class="name">Fuel consumption on a cruise (l/100km):</div>
+          <div class="value">65,46</div>
+        </div>
+      </div>
+    </div>
+    <div class="calculatorMain">
+      <div class="container">
+        <div class="leftColumn">
+          <div class="table">
+            <div class="row">
+              <div class="title">The life of the aircraft:</div>
+            </div>
+            <div class="row">
+              <div class="item">Planned operational life (years):</div>
+              <input type="text" class="item value bordered" placeholder="60" />
+            </div>
+            <div class="row">
+              <div class="item">Final year of operation:</div>
+              <div class="item value">2026</div>
+            </div>
+          </div>
+          <div class="table">
+            <div class="row">
+              <div class="title">Dynamics of aircraft depreciation:</div>
+            </div>
+            <div class="row">
+              <div class="item">Specify the cumulative % depreciation:</div>
+              <input type="text" class="item value bordered" placeholder="60" />
+            </div>
+            <div class="row">
+              <div class="item">Specify depreciation period:</div>
+              <input type="text" class="item value bordered" placeholder="60" />
+            </div>
+            <div class="row">
+              <div class="item">Final year of max. utilisation effect:</div>
+              <div class="item value">2022</div>
+            </div>
+            <div class="row">
+              <div class="item">Max. effect per year:</div>
+              <div class="item value">12,50 %</div>
+            </div>
+            <div class="row">
+              <div class="item">Effect per year:</div>
+              <div class="item value">4,55 %</div>
+            </div>
+          </div>
+          <div class="table">
+            <div class="row">
+              <div class="title">Flight details:</div>
+            </div>
+            <div class="row">
+              <div class="item">Specify the range of the route (km):</div>
+              <input type="text" class="item value bordered" placeholder="60" />
+            </div>
+            <div class="row">
+              <div class="item">Cost of airport services (USD):</div>
+              <input type="text" class="item value bordered" placeholder="60" />
+            </div>
+            <div class="row">
+              <div class="item">Specify fuel costs (USD/litre)</div>
+              <input type="text" class="item value bordered" placeholder="60" />
+            </div>
+          </div>
+          <div class="table">
+            <div class="row withTitle">
+              <div class="title">Recycling programme:</div>
+            </div>
+            <div class="row">
+              <div class="item">Engine (per flight hour)</div>
+              <input type="text" class="item value bordered" placeholder="60" />
+            </div>
+            <div class="row">
+              <div class="item">Avionics (per flight hour)</div>
+              <input type="text" class="item value bordered" placeholder="60" />
+            </div>
+            <div class="row">
+              <div class="item">Glider (per flight hour)</div>
+              <input type="text" class="item value bordered" placeholder="60" />
+            </div>
+          </div>
+          <div class="tableSumm">
+            <div class="table">
+              <div class="row">
+                <div class="title">Navigation costs:</div>
+              </div>
+              <div class="row">
+                <div class="item">AeroNavigation_R:</div>
+                <div class="item value">400,68</div>
+              </div>
+              <div class="row">
+                <div class="item">AeroNavigation_r:</div>
+                <div class="item value">89,00</div>
+              </div>
+            </div>
+            <div class="summWrapper">
+              <div class="item">
+                <div class="title">Total (USD)</div>
+              </div>
+              <div class="item">
+                <div class="summ">$ 489,68</div>
+              </div>
+            </div>
+          </div>
+          <div class="tableSumm">
+            <div class="table">
+              <div class="row">
+                <div class="title">The cost of making the flight:</div>
+              </div>
+              <div class="row">
+                <div class="item">Flight duration (min):</div>
+                <div class="item value">80,55</div>
+              </div>
+              <div class="row">
+                <div class="item">Cost of navigation costs (USD):</div>
+                <div class="item value">489,68</div>
+              </div>
+              <div class="row">
+                <div class="item">Fuel costs (USD):</div>
+                <div class="item value">363,24</div>
+              </div>
+              <div class="row">
+                <div class="item">Cost of aeroport services (USD):</div>
+                <div class="item value">480,00</div>
+              </div>
+              <div class="row">
+                <div class="item">Recycling programme (USD):</div>
+                <div class="item value">40,28</div>
+              </div>
+            </div>
+            <div class="summWrapper bordered">
+              <div class="item">
+                <div class="title">The cost of the entire flight (USD)</div>
+              </div>
+              <div class="item">
+                <div class="summ">$ 1 373,20</div>
+              </div>
+            </div>
+            <div class="summWrapper">
+              <div class="item">
+                <div class="title">Cost per flight hour (USD)</div>
+              </div>
+              <div class="item">
+                <div class="summ">$ 1 022,81</div>
+              </div>
+            </div>
+          </div>
+          <div class="tableSumm">
+            <div class="table">
+              <div class="row">
+                <div class="item">
+                  Specify the number of flying hours per month:
+                </div>
+                <input
+                  type="text"
+                  class="item value bordered"
+                  placeholder="60"
+                />
+              </div>
+              <div class="row">
+                <div class="item">
+                  Amount of variable costs per month (USD):
+                </div>
+                <div class="item value">24 800,06</div>
+              </div>
+              <div class="row">
+                <div class="item">Project duration (years):</div>
+                <div class="item value">6,00</div>
+              </div>
+              <div class="row">
+                <div class="item">Project duration (months):</div>
+                <div class="item value">72,00</div>
+              </div>
+            </div>
+            <div class="summWrapper">
+              <div class="item">
+                <div class="title">Total cost per flight hour (USD)</div>
+              </div>
+              <div class="item">
+                <div class="summ">$ 1 168,40</div>
+              </div>
+            </div>
+          </div>
+          <div class="tableSumm">
+            <div class="table">
+              <div class="row">
+                <div class="item">Specify the % yield per flight hour:</div>
+                <input
+                  type="text"
+                  class="item value bordered"
+                  placeholder="60"
+                />
+              </div>
+            </div>
+            <div class="summWrapper">
+              <div class="item">
+                <div class="title">Total cost per flight hour (USD)</div>
+              </div>
+              <div class="item">
+                <div class="summ">$ 1 168,40</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rightColumn">
+          <div class="tableSumm">
+            <div class="table">
+              <div class="row">
+                <div class="title">Crew salary:</div>
+                <div class="rightColumnWrapper">
+                  <div class="item">Year</div>
+                  <div class="item">Month</div>
+                  <div class="item">Hour</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Commander #1</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">36 000</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">50,00</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Commander #2</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">36 000</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">50,00</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">2nd pilot</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">24 000</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">33,33</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Flight attendant</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">0</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">0,00</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Engineer</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">36 000</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">50,00</div>
+                </div>
+              </div>
+            </div>
+            <div class="summWrapper">
+              <div class="item">
+                <div class="title">Total (USD)</div>
+              </div>
+              <div class="rightColumnWrapper">
+                <div class="item">
+                  <div class="summ">$ 132 000,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 11 000,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 183,33</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tableSumm">
+            <div class="table">
+              <div class="row">
+                <div class="title">Insurance:</div>
+                <div class="rightColumnWrapper">
+                  <div class="item">Year</div>
+                  <div class="item">Month</div>
+                  <div class="item">Hour</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Liability of 3 persons</div>
+                <div class="rightColumnWrapper">
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">833,33</div>
+                  <div class="item value">13,89</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Crew</div>
+                <div class="rightColumnWrapper">
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">416,76</div>
+                  <div class="item value">6,94</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Crew</div>
+                <div class="rightColumnWrapper">
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">666,67</div>
+                  <div class="item value">11,11</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Franchise</div>
+                <div class="rightColumnWrapper">
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">0</div>
+                  <div class="item value">0,00</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Aircraft service</div>
+                <div class="rightColumnWrapper">
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">583,33</div>
+                  <div class="item value">9,72</div>
+                </div>
+              </div>
+            </div>
+            <div class="summWrapper">
+              <div class="item">
+                <div class="title">Total (USD)</div>
+              </div>
+              <div class="rightColumnWrapper">
+                <div class="item">
+                  <div class="summ">$ 30 000,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 2 500,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 41,67</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tableSumm">
+            <div class="table">
+              <div class="row">
+                <div class="title">Additional costs:</div>
+                <div class="rightColumnWrapper">
+                  <div class="item">Year</div>
+                  <div class="item">Month</div>
+                  <div class="item">Hour</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Aeronautical charts</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">5 400</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">7,50</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Airworthiness support</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">19 200</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">26,67</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Planning software</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">9 600</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">13,33</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Communication</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">3 600</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">5,00</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Management</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">0</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">0,00</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">
+                  Daily subsistence allowance, trips, accommodation
+                </div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">12 000</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">16,67</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Crue training (Initial)</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">18 000</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">25,00</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item">Crue training (Annual)</div>
+                <div class="rightColumnWrapper">
+                  <div class="item value">0</div>
+                  <input
+                    type="text"
+                    class="item value bordered"
+                    placeholder="60"
+                  />
+                  <div class="item value">0,00</div>
+                </div>
+              </div>
+            </div>
+            <div class="summWrapper bordered">
+              <div class="item">
+                <div class="title">Total (USD)</div>
+              </div>
+              <div class="rightColumnWrapper">
+                <div class="item">
+                  <div class="summ">$ 67 000,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 5 650,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 94,17</div>
+                </div>
+              </div>
+            </div>
+            <div class="summWrapper">
+              <div class="item">
+                <div class="title">Grate total (USD)</div>
+              </div>
+              <div class="rightColumnWrapper">
+                <div class="item">
+                  <div class="summ">$ 229 800,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 19 150,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 319,17</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tableSumm withDouble withOneMoreColumn">
+            <div class="table">
+              <div class="doubleTableWrapper">
+                <div class="leftBlock">
+                  <div class="row">
+                    <div class="title">
+                      Table for calculating the amount of fuel for the voyage:
+                    </div>
+                  </div>
+                  <div class="row head">
+                    <div class="rightColumnWrapper">
+                      <div class="item">WarmUp & Navi</div>
+                      <div class="item">Take-Off</div>
+                      <div class="item">Cruise</div>
+                      <div class="item">Landing</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item">Engine load (%):</div>
+                    <div class="rightColumnWrapper">
+                      <div class="item value">15,00 %</div>
+                      <div class="item value">150,00%</div>
+                      <div class="item value">80,00%</div>
+                      <div class="item value">50,00%</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item">Duration, min:</div>
+                    <div class="rightColumnWrapper">
+                      <input
+                        type="text"
+                        class="item value bordered"
+                        placeholder="60"
+                      />
+                      <input
+                        type="text"
+                        class="item value bordered"
+                        placeholder="60"
+                      />
+                      <div class="item value">52,55</div>
+                      <div class="item value">10,00</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item">Fuel needed litres:</div>
+                    <div class="rightColumnWrapper">
+                      <div class="item value">12,86</div>
+                      <div class="item value">102,85</div>
+                      <div class="item value">360,35</div>
+                      <div class="item value">42,85</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rightBlock">
+                  <div class="row">
+                    <div class="item">Total</div>
+                  </div>
+                  <div class="row">
+                    <div class="item value">75,16%</div>
+                  </div>
+                  <div class="row">
+                    <div class="item value">80,55</div>
+                  </div>
+                  <div class="row">
+                    <div class="item value">518,91</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="summWrapper">
+              <div class="item">
+                <div class="title">Total (USD)</div>
+              </div>
+              <div class="rightColumnWrapper">
+                <div class="item">
+                  <div class="summ">$ 9,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 72,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 252,25</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 30,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 363,24</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tableSumm withDouble withThreeMoreColumn">
+            <div class="table">
+              <div class="doubleTableWrapper">
+                <div class="leftBlock">
+                  <div class="row">
+                    <div class="title">Costs:</div>
+                    <div class="rightColumnWrapper">
+                      <div class="item green">The whole period</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item">Engine load (%):</div>
+                    <div class="rightColumnWrapper">
+                      <div class="item value green">15,00 %</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item">Duration, min:</div>
+                    <div class="rightColumnWrapper">
+                      <div class="item value green">10,00</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item">Fuel needed litres:</div>
+                    <div class="rightColumnWrapper">
+                      <div class="item value green">12,86</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rightBlock">
+                  <div class="row">
+                    <div class="item">Year</div>
+                    <div class="item">Month</div>
+                    <div class="item">Hour</div>
+                  </div>
+                  <div class="row">
+                    <div class="item value">10 000</div>
+                    <div class="item value">833,33</div>
+                    <div class="item value">13,89</div>
+                  </div>
+                  <div class="row">
+                    <div class="item value">5000</div>
+                    <div class="item value">416,67</div>
+                    <div class="item value">6,94</div>
+                  </div>
+                  <div class="row">
+                    <div class="item value">8000</div>
+                    <div class="item value">666,67</div>
+                    <div class="item value">11,11</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="summWrapper">
+              <div class="item">
+                <div class="title">Total (USD)</div>
+              </div>
+              <div class="rightColumnWrapper">
+                <div class="item">
+                  <div class="summ">$ 72,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 252,25</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 30,00</div>
+                </div>
+                <div class="item">
+                  <div class="summ">$ 363,24</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doubleWrapper">
+            <div class="leftBlock">
+              <div class="tableSumm">
+                <div class="table">
+                  <div class="row">
+                    <div class="item">Total cost per flight hour (USD):</div>
+                    <div class="item value">1 756,20</div>
+                  </div>
+                </div>
+                <div class="summWrapper">
+                  <div class="item">
+                    <div class="title">Projected income per month (USD)</div>
+                  </div>
+                  <div class="item">
+                    <div class="summ">$ 105 168,40</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rightBlock">
+              <div class="tableSumm">
+                <div class="table">
+                  <div class="row">
+                    <div class="item green">
+                      Projected net income per month. (USD):
+                    </div>
+                    <div class="item value green">35 756,20</div>
+                  </div>
+                </div>
+                <div class="summWrapper">
+                  <div class="item">
+                    <div class="title">Breakeven point (months)</div>
+                  </div>
+                  <div class="item">
+                    <div class="summ">48,00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

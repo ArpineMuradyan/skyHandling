@@ -1,0 +1,63 @@
+#noscript {
+	position: fixed; 
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	color: red;
+	background-color: #000;
+	padding: 15px;
+	font-size: 24px;
+}
+
+html, body{
+	min-height: 100vh;
+	.font-calibri();
+	color: #fff;
+	background-color: #282932;
+}
+
+.tab1, .section{
+	height: 100vh;
+	overflow-y: auto;
+	padding-top: 150px;
+}
+
+.tab1{
+	background: url("../img/bg.png") no-repeat center;
+	background-size: cover;
+}
+
+.section{
+	// background: linear-gradient( to right bottom, rgb(40,41,50) 2%, rgb(58,59,80) 100%);
+	background: url("../img/bg.png") no-repeat center;
+	background-size: cover;
+
+	&.even{
+		background: url("../img/bg-reverse.png") no-repeat center;
+		
+	}
+}
+
+.cellValueInput{
+	color: #48b7e9;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 22px;
+	background-color: #252632;
+	border: 1px solid #444553;
+	text-align: center;
+	width: 110px;
+
+	&:focus{
+		border: 1px solid #826f31;
+	}
+	&.error{
+		border: 1px solid #783738;
+		color: #c54136;
+	}
+}
+
+.errorValue{
+	border: 1px solid #783738;
+	color: #c54136;
+}

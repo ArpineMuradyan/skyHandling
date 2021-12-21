@@ -1,0 +1,152 @@
+
+
+.tablesContainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto 0;
+	// height: calc(100% - 100px);
+}
+
+.tablesContainerInner{
+	display: flex;
+}
+
+.br-lb{
+	border-bottom-left-radius: 10px;
+}
+.br-rb{
+	border-bottom-right-radius: 10px;
+}
+.br-lt{
+	border-top-left-radius: 10px;
+}
+.br-rt{
+	border-top-right-radius: 10px;
+}
+
+.tableType1{
+	width: 500px;
+	border: none;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 15px;
+	border-collapse: collapse;
+
+	thead{
+		background-color: #252632;
+		color: #57c3f4;
+		font-size: 20px;
+		text-align: left;
+		border-bottom: 1px solid #3b3d4e;
+	}
+
+	tbody{
+		background-color: #2b2c3b;
+	}
+
+	.table__row{
+		height: 40px;
+	}
+	.table__th{
+		padding: 0 20px;
+		font-weight: normal;
+	}
+	.table__cell{
+		padding: 0 20px;
+	}
+	.labelCell{
+		font-size: 16px;
+		color: rgba(255, 255, 255, 0.6);
+
+	}
+	.valueCell{
+		color: #fff;
+		font-weight: bold;
+		font-size: 16px;
+		text-align: right;
+	}
+}
+.tableType2{
+	border: none;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 15px;
+	border-collapse: collapse;
+
+	thead{
+		color: #b6b7ba;
+		font-size: 20px;
+		text-align: right;
+	}
+
+	tbody .table__row{
+		background-color: #1d1f2f;
+	}
+
+	.table__row{
+		height: 40px;
+	}
+	.table__th{
+		padding: 0 20px;
+		font-weight: normal;
+		width: 140px;
+		background-color: #252632;
+		border-bottom: 1px solid #3b3d4e;
+
+		&-first{
+			width: 280px;
+			color: #57c3f4;
+			text-align: left;
+		}
+	}
+	.table__cell{
+		padding: 0 20px;
+		background-color: #2b2c3b;
+	}
+	.labelCell{
+		font-size: 16px;
+		color: rgba(255, 255, 255, 0.6);
+
+	}
+	.valueCell{
+		color: #fff;
+		font-weight: bold;
+		font-size: 16px;
+		text-align: right;
+	}
+
+	tfoot{
+		background-color: #1d1f2f;
+		.table__cell{
+			background-color: #1d1f2f;
+			font-size: 16px;
+			font-weight: normal;
+			color: #199069;
+		}
+		.table__row{
+			background-color: #161724;
+		}
+		.table__row.table__row-second .table__cell{
+			background-color: #161724;
+			font-weight: bold;
+		}
+	}
+
+	.modCell1{
+		background-color: #252632;
+	}
+
+	.modCell2{
+		background-color: transparent;
+		border: none;
+	}
+
+	.bg-transparent{
+		background-color: transparent !important;
+
+		.table__cell{
+			text-align: right;
+		}
+	}
+}
